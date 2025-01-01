@@ -36,7 +36,7 @@ df_train["target"] = transform_survival_probability(df_train, time_col='efs_time
 
 # 不要になったカラムを削除
 drop_cols = ["ID", 'efs', 'efs_time']
-df_trainainain = df_train.drop(columns=[col for col in drop_cols if col in df_train.columns])
+df_train = df_train.drop(columns=[col for col in drop_cols if col in df_train.columns])
 df_test = df_test.drop(columns=[col for col in drop_cols if col in df_test.columns])
 df_train.head()
 
