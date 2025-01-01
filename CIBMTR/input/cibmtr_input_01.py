@@ -50,5 +50,5 @@ df_train = convert_object_to_category(df_train)
 df_test = convert_object_to_category(df_test)
 
 # データフレームをCSVファイルに保存
-df_train.to_csv('df_train_01.csv')
-df_test.to_csv('df_test_01.csv')
+df_train.to_csv('df_train_01.csv', index=False)
+df_test.to_csv('df_test_01.csv', index=False)
